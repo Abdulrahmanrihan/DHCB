@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
@@ -13,21 +14,23 @@ import scalability from "../assets/images/scalability.png";
 import infinity from "../assets/images/infinity.png"
 import ecommerce from "../assets/images/ecommerce.png"
 
+import devices from "../assets/images/devices.png"
+
 export default function Home() {
   return (
     <main class="w-full bg-white">
       <Header/>
-      <section class="p-24 bg-darker flex flex-row">
+      <section class="p-24 pb-16 bg-darker flex flex-row">
         <div class="flex flex-col w-2/5">
           <h1 class="text-gray text-5xl">Make</h1>
           <h1 class="font-bold text-white text-5xl">Keep your business up to date with Tech</h1>
           <p class="text-light-gray mt-8 mb-4">Optimize your Sales, integrate AI into your
           pipelines, cut your costs, up your product, and maintain your tech stack.</p>
           <a class="my-10" href="/contact"><button class="bg-blue rounded-md py-2 px-4">Contact Sales</button></a>
-          <a class="text-gray" href="/about">LEARN MORE ABOUT MAKE</a>
+          <Link class="text-gray text-xs" href="/about">LEARN MORE ABOUT MAKE</Link>
         </div>
         <div class="flex flex-col w-3/5">
-
+          <Image class="mx-auto pl-12" src={devices} width={500} height={100} />
         </div>
       </section>
       <section class="flex flex-row px-32 pt-40 pb-32">
