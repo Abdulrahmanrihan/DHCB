@@ -8,7 +8,7 @@ export default function Footer(){
                 <div class="flex flex-col w-1/2 text-white">
                     <h1 class="text-6xl font-bold">Get Started for free</h1>
                     <p class="my-4 font-light">Try DHCB for as long as you like with our free Starter plan.<br/> host, and unlock additional features.</p>
-                    <button class="bg-blue text-white rounded-sm py-3 px-4 w-fit"><span class="font-bold">Get started</span> - it's free</button>
+                    <button class="bg-blue text-white rounded-sm py-3 px-4 w-fit"><span class="font-bold">Get started</span> - it&apos;s free</button>
                 </div>
                 <div class="flex flex-row w-1/2 p-8 text-gray justify-around">
                     <div class="flex flex-col">

@@ -71,8 +71,8 @@ export default function Home() {
       </section>
       <hr class="border-gray"/>
       <section class="p-32">
-        <h1 class="text-6xl text-dark text-center my-6">"Hi-tech" commitment</h1>
-        <p class="text-dark text-center mt-12 text-xl">DHCB's internal reference to the commitment-for-success that we promise our partners. As we expect to work with the top-notch players of different ecosystems, each and every one of our team is committed to bring the same level of grit in every piece of work.</p>
+        <h1 class="text-6xl text-dark text-center my-6">&quot;Hi-tech&quot; commitment</h1>
+        <p class="text-dark text-center mt-12 text-xl">DHCB&apos;s internal reference to the commitment-for-success that we promise our partners. As we expect to work with the top-notch players of different ecosystems, each and every one of our team is committed to bring the same level of grit in every piece of work.</p>
         <div class="flex flex-col">
           <div class="flex flex-row my-24">
             <div class="flex flex-col flex-1 text-center m-auto">
