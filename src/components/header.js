@@ -32,8 +32,8 @@ export default function Header(){
                     <Link href="/"><button class="p-2">Home</button></Link>
                     <Link href="/products"><button class="p-2">Products</button></Link>
                     <Link href="/about"><button class="p-2">About Us</button></Link>
-                    <Link href="/contact"><button class="bg-blue rounded-md py-2 px-4">Contact Sales</button></Link>
-                    <Link href="/login"><button class="bg-blue rounded-md py-2 px-4">Customer Login</button></Link>
+                    <Link href="/contact"><button class="bg-blue rounded-md py-2 px-12">Contact Sales</button></Link>
+                    <Link href="/login"><button class="bg-blue rounded-md py-2 px-12">Customer Login</button></Link>
                 </div>
             </div>
             <div class="flex md:hidden flex-col md:flex-row w-full m-auto  bg-dark">

@@ -85,18 +85,18 @@ export default function Home() {
         <div class="flex flex-col">
           <div class="flex flex-col md:flex-row my-24">
             <div class="flex flex-col flex-1 text-center m-auto md:my-0 my-6">
-              <Image class="m-auto mb-2" width={60} height={60} src={speed} />
+              <Image class="mx-auto mb-2" width={60} height={60} src={speed} />
               <h3 class="font-bold text-dark mb-2 text-2xl">Speed</h3>
               <p class="text-gray"> Fastest to the markets. Fastest tech solutions.</p>
             </div>
             <div class="flex flex-col flex-1 text-center m-auto mt-6 md:my-0 my-6">
-              <Image class="m-auto mb-2" width={40} height={40} src={scalability} />
+              <Image class="mx-auto mb-2" width={45} height={45} src={scalability} />
               <h3 class="font-bold text-dark mb-2 text-2xl">Scalability</h3>
               <p class="text-gray"> Millions of users?<br/> International? <br/>
               We offer the tech. </p>
             </div>
             <div class="flex flex-col flex-1 text-center m-auto md:my-0 my-6">
-              <Image class="m-auto mb-2" width={60} height={60} src={security} />
+              <Image class="mx-auto mb-2" width={60} height={60} src={security} />
               <h3 class="font-bold text-dark mb-2 text-2xl">Security</h3>
               <p class="text-gray">Built-in SSL, fully encrypted, end-to-end and on-demand internal deployment.</p>
             </div>
