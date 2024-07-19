@@ -3,6 +3,9 @@ import Link from "next/link";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+
 import ipad from "../assets/images/ipad.png";
 import weblayout from "../assets/images/weblayout.png";
 import dashboard from "../assets/images/dashboard.png";
@@ -20,8 +23,11 @@ export default function Home() {
   return (
     <main class="w-full bg-white">
       <Header/>
-      <section class="p-24 pb-16 bg-darker flex flex-row">
-        <div class="flex flex-col w-2/5">
+      <section class="p-12 md:p-24 pb-16 bg-darker flex flex-col md:flex-row">
+        <div class="md:hidden flex flex-col w-full ">
+          <Image class="mx-auto mt-4 mb-8" src={devices} width={500} height={100} />
+        </div>
+        <div class="flex flex-col md:w-2/5 w-full">
           <h1 class="text-gray text-5xl">Make</h1>
           <h1 class="font-bold text-white text-5xl">Keep your business up to date with Tech</h1>
           <p class="text-light-gray mt-8 mb-4">Optimize your Sales, integrate AI into your
@@ -29,67 +35,67 @@ export default function Home() {
           <a class="my-10" href="/contact"><button class="bg-blue rounded-md py-2 px-4">Contact Sales</button></a>
           <Link class="text-gray text-xs" href="/about">LEARN MORE ABOUT MAKE</Link>
         </div>
-        <div class="flex flex-col w-3/5">
+        <div class="hidden md:flex flex-col w-3/5">
           <Image class="mx-auto pl-12" src={devices} width={500} height={100} />
         </div>
       </section>
-      <section class="flex flex-row px-32 pt-40 pb-32">
+      <section class="flex md:flex-row flex-col md:px-32 md:pt-40 md:pb-32 px-16 py-12">
         <div class="flex flex-col flex-1">
-          <h1 class="text-dark text-4xl font-bold">All the tech you need, without management</h1>
+          <h1 class="text-dark text-4xl font-bold md:mb-0 mb-6">All the tech you need, without management</h1>
         </div>
         <div class="flex flex-col flex-1">
-          <p class="text-dark p-2">One product manager from our clients is enough for our team to drive all your tech magic. Connect us with your PM now!</p>
+          <p class="text-dark md:p-2">One product manager from our clients is enough for our team to drive all your tech magic. Connect us with your PM now!</p>
         </div>
       </section>
-      <section class="flex flex-row p-32">
-        <div class="flex flex-col w-3/5 pr-24">
+      <section class="flex md:flex-row flex-col md:p-32 p-16">
+        <div class="flex flex-col md:w-3/5 w-full md:pr-24">
           <h1 class="text-3xl text-dark font-bold">Tech on the phone</h1>
           <p class="text-dark mt-2">Our team has built enough apps for IOS and Android to power your ideas </p>
           <a class="text-gray mt-8" href="/">Get your app now</a>
         </div>
-        <div class="flex flex-col w-2/5">
+        <div class="w-full md:w-2/5 md:mt-0 mt-8">
           <Image width={300} height={100} src={ipad}/>
         </div>
       </section>
-      <section class="flex flex-row p-32">
-        <div class="flex flex-col w-3/5 pr-24">
+      <section class="flex flex-col md:flex-row md:p-32 p-16">
+        <div class="flex flex-col md:w-3/5 w-full md:pr-24">
           <h1 class="text-3xl text-dark font-bold">Boost your web presence</h1>
           <p class="text-dark mt-2">increase your exposure by partnering with 
           our team on the web </p>
           <a class="text-gray mt-8" href="/">Get your website now</a>
         </div>
-        <div class="flex flex-col w-2/5">
+        <div class="w-full md:w-2/5 md:mt-0 mt-8">
           <Image width={300} height={100} src={weblayout}/>
         </div>
       </section>
-      <section class="flex flex-row p-32">
-        <div class="flex flex-col w-3/5 pr-24">
+      <section class="flex flex-col md:flex-row md:p-32 p-16">
+        <div class="flex flex-col w-full md:w-3/5 md:pr-24">
           <h1 class="text-3xl text-dark font-bold">Internal pipelines</h1>
           <p class="text-dark mt-2">Automate your business operations seamlessly. DHCB enjoy bringing digital transformation in multiple forms.</p>
           <a class="text-gray mt-8" href="/">Digitally transform now</a>
         </div>
-        <div class="flex flex-col w-2/5">
+        <div class="w-full md:w-2/5 md:mt-0 mt-8">
           <Image width={300} height={100} src={dashboard}/>
         </div>
       </section>
       <hr class="border-gray"/>
-      <section class="p-32">
-        <h1 class="text-6xl text-dark text-center my-6">&quot;Hi-tech&quot; commitment</h1>
+      <section class="p-16 md:p-32">
+        <h1 class="text-4xl md:text-6xl text-dark text-center my-6">&quot;Hi-tech&quot;<br/> commitment</h1>
         <p class="text-dark text-center mt-12 text-xl">DHCB&apos;s internal reference to the commitment-for-success that we promise our partners. As we expect to work with the top-notch players of different ecosystems, each and every one of our team is committed to bring the same level of grit in every piece of work.</p>
         <div class="flex flex-col">
-          <div class="flex flex-row my-24">
-            <div class="flex flex-col flex-1 text-center m-auto">
+          <div class="flex flex-col md:flex-row my-24">
+            <div class="flex flex-col flex-1 text-center m-auto md:my-0 my-6">
               <Image class="m-auto mb-2" width={60} height={60} src={speed} />
               <h3 class="font-bold text-dark mb-2 text-2xl">Speed</h3>
               <p class="text-gray"> Fastest to the markets. Fastest tech solutions.</p>
             </div>
-            <div class="flex flex-col flex-1 text-center m-auto mt-6">
+            <div class="flex flex-col flex-1 text-center m-auto mt-6 md:my-0 my-6">
               <Image class="m-auto mb-2" width={40} height={40} src={scalability} />
               <h3 class="font-bold text-dark mb-2 text-2xl">Scalability</h3>
               <p class="text-gray"> Millions of users?<br/> International? <br/>
               We offer the tech. </p>
             </div>
-            <div class="flex flex-col flex-1 text-center m-auto">
+            <div class="flex flex-col flex-1 text-center m-auto md:my-0 my-6">
               <Image class="m-auto mb-2" width={60} height={60} src={security} />
               <h3 class="font-bold text-dark mb-2 text-2xl">Security</h3>
               <p class="text-gray">Built-in SSL, fully encrypted, end-to-end and on-demand internal deployment.</p>
@@ -103,97 +109,136 @@ export default function Home() {
         </div>
       </section>
       <hr/>
-      <section class="flex flex-row px-32 py-32">
-        <div class="flex flex-col flex-1">
+      <section class="flex flex-col md:flex-row md:px-32 md:py-32 p-16">
+        <div class="flex flex-col flex-1 md:mb-0 mb-6">
           <h1 class="text-dark text-4xl font-bold">Powerful tech stack</h1>
         </div>
         <div class="flex flex-col flex-1">
-          <p class="text-dark p-2">Moore’s law: technology advancement doubles year-over-year. DHCB partners focus 100% on their operations while our team focus on integrating the latest and greatest tech</p>
+          <p class="text-dark md:p-2">Moore’s law: technology advancement doubles year-over-year. DHCB partners focus 100% on their operations while our team focus on integrating the latest and greatest tech</p>
         </div>
       </section>
-      <section class="flex flex-row p-32">
-        <div class="flex flex-col w-3/5 pr-24">
+      <section class="flex flex-col md:flex-row md:p-32 p-16">
+        <div class="flex flex-col w-full md:w-3/5 md:pr-24">
           <h1 class="text-3xl text-dark font-bold">Sell online</h1>
           <p class="text-dark mt-2">We see a lot of value in bringing our partners’ products to customers who need them.</p>
           <a class="text-gray mt-8 font-bold" href="/">Build your online store now</a>
         </div>
-        <div class="flex flex-col w-2/5">
+        <div class="w-full md:w-2/5 md:mt-0 mt-8">
           <Image class="mx-auto" width={170} height={50} src={ecommerce}/>
         </div>
       </section>
-      <section class="flex flex-row p-32">
-        <div class="flex flex-col w-3/5 pr-24">
+      <section class="flex flex-col md:flex-row md:p-32 p-16">
+        <div class="flex flex-col w-full md:w-3/5 md:pr-24">
           <h1 class="text-3xl text-dark font-bold">Integrate with businesses</h1>
           <p class="text-dark mt-2">People grow together. DHCB’s integration engineering team 
           specializes in using tech to make partnerships easier.</p>
           <a class="text-gray mt-8 font-bold" href="/">Drive business value now</a>
         </div>
-        <div class="flex flex-col w-2/5">
+        <div class="w-full md:w-2/5 md:mt-0 mt-8">
           <Image class="mx-auto" width={170} height={50} src={infinity}/>
         </div>
       </section>
-      <section class="p-32 bg-beige">
-        <div class="p-12 text-black">
-          <h1 class="text-6xl mb-4">Ideas</h1>
-          <p class="text-4xl">Discover everything you can do with your team</p>
+      <section class="p-16 md:p-32 bg-beige">
+        <div class="md:p-12 text-black md:mb-0 mb-12">
+          <h1 class="text-4xl md:text-6xl mb-4">Ideas</h1>
+          <p class="text-2xl md:text-4xl">Discover everything you can do with your team</p>
         </div>
-        <div class="flex flex-row text-dark w-full">
-          <div class="flex flex-col bg-white p-6 rounded-sm w-2/5 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
+        <div class="flex flex-col md:flex-row text-dark w-full">
+          <div class="flex flex-col bg-white p-6 rounded-sm md:w-2/5 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
             <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
           </div>
-          <div class="flex flex-col bg-white p-6 rounded-sm flex-1 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
+          <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
             <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
           </div>
-          <div class="flex flex-col bg-white p-6 rounded-sm flex-1 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
-          </div>
-        </div>
-        <div class="flex flex-row text-dark w-full">
-          <div class="flex flex-col bg-white p-6 rounded-sm flex-1 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
-          </div>
-          <div class="flex flex-col bg-white p-6 rounded-sm w-2/5 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
-          </div>
-          <div class="flex flex-col bg-white p-6 rounded-sm flex-1 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
+          <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
             <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
           </div>
         </div>
-        <div class="flex flex-row text-dark w-full">
-          <div class="flex flex-col bg-white p-6 rounded-sm flex-1 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
+        <div class="flex flex-col md:flex-row text-dark w-full">
+          <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
             <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
           </div>
-          <div class="flex flex-col bg-white p-6 rounded-sm flex-1 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
+          <div class="flex flex-col bg-white p-6 rounded-sm md:w-2/5 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
             <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
           </div>
-          <div class="flex flex-col bg-white p-6 rounded-sm w-1/5 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
-          </div>
-          <div class="flex flex-col bg-white p-6 rounded-sm flex-1 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
+          <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
             <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
           </div>
         </div>
-        <div class="flex flex-row text-dark w-full">
-          <div class="flex flex-col bg-white p-6 rounded-sm flex-1 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
+        <div class="flex flex-col md:flex-row text-dark w-full">
+          <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
             <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
           </div>
-          <div class="flex flex-col bg-white p-6 rounded-sm flex-1 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
+          <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
             <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
           </div>
-          <div class="flex flex-col bg-white p-6 rounded-sm w-2/5 m-2">
-            <p class="text-sm font-bold mb-12">Localization</p>
+          <div class="flex flex-col bg-white p-6 rounded-sm md:w-1/5 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
+            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+          </div>
+          <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
+            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row text-dark w-full">
+          <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
+            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+          </div>
+          <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
+            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+          </div>
+          <div class="flex flex-col bg-white p-6 rounded-sm md:w-2/5 md:m-2 my-2">
+            <div class="flex flex-row mb-12">
+              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto"> Localization</p>
+            </div>
             <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
           </div>
         </div>
