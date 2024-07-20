@@ -7,13 +7,13 @@ export default function contact(){
             <Header/>
             <section class="flex flex-col md:flex-row md:m-12 m-6">
                 <div class="flex flex-col md:w-2/5 w-full rounded-md bg-darker p-12">
-                    <p class="text-white text-xl mb-3 font-bold">Connect</p>
-                    <p class="text-white mb-12 text-xs">Out team is committed to helping you</p>
+                    <p class="text-white text-3xl mb-3 font-bold">Connect</p>
+                    <p class="text-white mb-12 text-sm">Out team is committed to helping you</p>
                     <p class="my-1 text-xs">Ezzat's phone</p>
                     <p class="my-1 text-xs">connect@dhcb.com</p>
                     <p class="my-1 text-xs">Egypt | United states</p>
                 </div>
-                <div class="flex flex-col w-full md:w-3/5 bg-white md:p-12 p-6">
+                <div class="flex flex-col w-full md:w-3/5 bg-white md:p-12 p-6 text-black">
                     <div class="flex flex-col md:flex-row justify-around">
                         <div class="flex flex-col m-4">
                             <p class="text-xs text-dark">Name</p>

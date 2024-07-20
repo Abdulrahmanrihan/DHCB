@@ -25,17 +25,17 @@ export default function products(){
                 </div>
             </section>
             <section class="flex flex-col md:p-12 p-8 bg-white">
-                <h1 class="text-3xl md:text-4xl text-center my-24 text-black">Effeciency highlights</h1>
+                <h1 class="text-3xl md:text-4xl text-center md:mt-24 mt-16 mb-24 text-black">Effeciency highlights</h1>
                 <div class="flex md:flex-row flex-col">
                     <Image class="md:w-1/2 w-full" src={screenshot1} width={500} height={500}/>
                     <div class="flex flex-col md:p-12 md:my-0 my-12">
-                        <p class="text-light-gray text-2xl mb-2">Business dashboards</p>
+                        <p class="text-gray text-2xl mb-2">Business dashboards</p>
                         <p class="text-light-gray">Pipelines that power up operations, track sales, maximize customer satisfaction, etc.</p>
                     </div>
                 </div>
                 <div class="flex flex-col md:flex-row md:mt-44 mt-12">
                     <div class="flex flex-col md:p-12">
-                        <p class="text-light-gray text-2xl mb-2">Integrations powered with AI</p>
+                        <p class="text-gray text-2xl mb-2">Integrations powered with AI</p>
                         <p class="text-light-gray">Generative solutions, APIs, third-party software utility and more</p>
                     </div>
                     <Image class="w-full md:w-1/2 md:my-0 my-12" src={screenshot2} width={500} height={500}/>
