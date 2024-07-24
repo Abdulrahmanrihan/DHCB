@@ -4,7 +4,9 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faArrowPointer, faBorderAll, faGlobe, faLink, faMagnifyingGlass, faPen, faSitemap, faUser, faFigma, faBolt, faBagShopping, faCloud, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+
 
 import ipad from "../assets/images/ipad.png";
 import weblayout from "../assets/images/weblayout.png";
@@ -51,7 +53,7 @@ export default function Home() {
         <div class="flex flex-col md:w-3/5 w-full md:pr-24">
           <h1 class="text-3xl text-dark font-bold">Tech on the phone</h1>
           <p class="text-dark mt-2">Our team has built enough apps for IOS and Android to power your ideas </p>
-          <a class="text-gray mt-8" href="/">Get your app now</a>
+          <a class="text-gray mt-8" href="/contact">Get your app now <t/><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
         </div>
         <div class="w-full md:w-2/5 md:mt-0 mt-8">
           <Image width={300} height={100} src={ipad}/>
@@ -62,7 +64,7 @@ export default function Home() {
           <h1 class="text-3xl text-dark font-bold">Boost your web presence</h1>
           <p class="text-dark mt-2">increase your exposure by partnering with 
           our team on the web </p>
-          <a class="text-gray mt-8" href="/">Get your website now</a>
+          <a class="text-gray mt-8" href="/contact">Get your website now <t/><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
         </div>
         <div class="w-full md:w-2/5 md:mt-0 mt-8">
           <Image width={300} height={100} src={weblayout}/>
@@ -72,7 +74,7 @@ export default function Home() {
         <div class="flex flex-col w-full md:w-3/5 md:pr-24">
           <h1 class="text-3xl text-dark font-bold">Internal pipelines</h1>
           <p class="text-dark mt-2">Automate your business operations seamlessly. DHCB enjoy bringing digital transformation in multiple forms.</p>
-          <a class="text-gray mt-8" href="/">Digitally transform now</a>
+          <a class="text-gray mt-8" href="/contact">Digitally transform now <t/><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
         </div>
         <div class="w-full md:w-2/5 md:mt-0 mt-8">
           <Image width={300} height={100} src={dashboard}/>
@@ -121,7 +123,7 @@ export default function Home() {
         <div class="flex flex-col w-full md:w-3/5 md:pr-24">
           <h1 class="text-3xl text-dark font-bold">Sell online</h1>
           <p class="text-dark mt-2">We see a lot of value in bringing our partners’ products to customers who need them.</p>
-          <a class="text-gray mt-8 font-bold" href="/">Build your online store now</a>
+          <a class="text-gray mt-8 font-bold" href="/contact">Build your online store now <t/><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
         </div>
         <div class="w-full md:w-2/5 md:mt-0 mt-8">
           <Image class="mx-auto" width={170} height={50} src={ecommerce}/>
@@ -132,7 +134,7 @@ export default function Home() {
           <h1 class="text-3xl text-dark font-bold">Integrate with businesses</h1>
           <p class="text-dark mt-2">People grow together. DHCB’s integration engineering team 
           specializes in using tech to make partnerships easier.</p>
-          <a class="text-gray mt-8 font-bold" href="/">Drive business value now</a>
+          <a class="text-gray mt-8 font-bold" href="/contact">Drive business value now <t/><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
         </div>
         <div class="w-full md:w-2/5 md:mt-0 mt-8">
           <Image class="mx-auto" width={170} height={50} src={infinity}/>
@@ -146,100 +148,102 @@ export default function Home() {
         <div class="flex flex-col md:flex-row text-dark w-full">
           <div class="flex flex-col bg-white p-6 rounded-sm md:w-2/5 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faGlobe} />
+              <p class="text-sm font-bold my-auto ml-2"> Localization</p>
             </div>
             <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
           </div>
           <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faDatabase} />
+              <p class="text-sm font-bold my-auto ml-2">Database storage</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">Define your data and structure them in the cloud</p>
           </div>
           <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faBagShopping} />
+              <p class="text-sm font-bold my-auto ml-2">Ecommerce</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">Goodbye templates and code design your store visually.</p>
           </div>
         </div>
         <div class="flex flex-col md:flex-row text-dark w-full">
           <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faUser} />
+              <p class="text-sm font-bold my-auto ml-2"> User Accounts</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">Users for your system. Secure databases and records.</p>
           </div>
           <div class="flex flex-col bg-white p-6 rounded-sm md:w-2/5 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faArrowPointer} />
+              <p class="text-sm font-bold my-auto ml-2"> Designer</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">The power of CSS, HTML, and Javascript in a visual canvas.</p>
           </div>
           <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faPen} />
+              <p class="text-sm font-bold my-auto ml-2"> Customization</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">Custom-built environment for content teammates.</p>
           </div>
         </div>
         <div class="flex flex-col md:flex-row text-dark w-full">
           <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faSitemap} />
+              <p class="text-sm font-bold my-auto ml-2"> Logic</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">Create custom automated workflows.</p>
           </div>
           <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faMagnifyingGlass} />
+              <p class="text-sm font-bold my-auto ml-2"> SEO</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">Optimize your website with controls,
+            hosting, and flexible tools.</p>
           </div>
           <div class="flex flex-col bg-white p-6 rounded-sm md:w-1/5 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faCloud} />
+              <p class="text-sm font-bold my-auto ml-2"> Hosting</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">Light-speed hosting.</p>
           </div>
           <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faBorderAll} />
+              <p class="text-sm font-bold my-auto ml-2"> Grid</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">Build smart, responsive, CSS grid-
+            powered layouts in Webflow visually.</p>
           </div>
         </div>
         <div class="flex flex-col md:flex-row text-dark w-full">
           <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faLink} />
+              <p class="text-sm font-bold my-auto ml-2"> Integration</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">Leverage third-party apps.</p>
           </div>
           <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faFigma} />
+              <p class="text-sm font-bold my-auto ml-2"> Figma</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">Turn your idea into UI using our designers.</p>
           </div>
           <div class="flex flex-col bg-white p-6 rounded-sm md:w-2/5 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mr-2 mt-0.5" icon={faGlobe} />
-              <p class="text-sm font-bold my-auto"> Localization</p>
+              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faBolt} />
+              <p class="text-sm font-bold my-auto ml-2"> Interactions</p>
             </div>
-            <p class="text-sm">Create fully localized experiences for site visitors around the world</p>
+            <p class="text-sm">Build websites interactions and animations visually.</p>
           </div>
         </div>
       </section>

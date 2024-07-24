@@ -26,7 +26,7 @@ export default function Header(){
                 <div class="flex flex-row flex-1 justify-around my-auto md:px-16">
                     <Link href="/"><button class="p-2">Home</button></Link>
                     <Link href="/products"><button class="p-2">Products</button></Link>
-                    <Link href="/about"><button class="p-2">About Us</button></Link>
+                    <Link href="/construction"><button class="p-2">About Us</button></Link>
                     <Link href="/contact"><button class="bg-blue rounded-md py-2 px-12">Contact Sales</button></Link>
                     <Link href="/login"><button class="bg-blue rounded-md py-2 px-12">Customer Login</button></Link>
                 </div>
@@ -40,7 +40,7 @@ export default function Header(){
                 <div ref={navMenuRef} class="hidden flex flex-col md:flex-row flex-1 justify-around my-auto md:text-left text-center p-4">
                     <Link href="/"><button class="p-2 md:my-0 my-2">Home</button></Link>
                     <Link href="/products"><button class="p-2 md:my-0 my-2">Products</button></Link>
-                    <Link href="/about"><button class="p-2 md:my-0 my-2">About Us</button></Link>
+                    <Link href="/construction"><button class="p-2 md:my-0 my-2">About Us</button></Link>
                     <Link class="md:my-0 my-2" href="/contact"><button class="bg-blue rounded-md py-2 px-4">Contact Sales</button></Link>
                     <Link class="md:my-0 my-2" href="/login"><button class="bg-blue rounded-md py-2 px-4">Customer Login</button></Link>
                 </div>

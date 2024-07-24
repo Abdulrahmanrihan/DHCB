@@ -14,18 +14,18 @@ export default function Footer(){
                 <div class="flex flex-col md:flex-row w-full md:w-1/2 md:p-8 text-gray justify-around md:my-0 my-6">
                     <div class="flex flex-col md:my-0 my-6">
                         <p class="font-bold text-white mb-1">Our work</p>
-                        <p class="my-1">Phone tech</p>
-                        <p class="my-1">Web tech</p>
-                        <p class="my-1">Tech integration</p>
-                        <p class="my-1">Online stores</p>
-                        <p class="my-1">Automation</p>
-                        <p class="my-1">Custom tech</p>
+                        <a href="/construction"><p class="my-1">Phone tech</p></a>
+                        <a href="/construction"><p class="my-1">Web tech</p></a>
+                        <a href="/construction"><p class="my-1">Tech integration</p></a>
+                        <a href="/construction"><p class="my-1">Online stores</p></a>
+                        <a href="/construction"><p class="my-1">Automation</p></a>
+                        <a href="/construction"><p class="my-1">Custom tech</p></a>
                     </div>
                     <div class="flex flex-col md:my-0 my-6">
                         <p class="font-bold text-white mb-1">Company</p>
-                        <p class="my-1">About</p>
-                        <p class="my-1">Careers</p>
-                        <p class="my-1">Privacy Policy</p>
+                        <a href="/construction"><p class="my-1">About</p></a>
+                        <a href="/construction"><p class="my-1">Careers</p></a>
+                        <a href="/construction"><p class="my-1">Privacy Policy</p></a>
                     </div>
                 </div>
             </div>
