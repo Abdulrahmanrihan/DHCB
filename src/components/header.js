@@ -23,12 +23,12 @@ export default function Header(){
         <main>
             <div class="hidden md:flex flex-row w-full m-auto p-4 bg-dark">
                 <Link href="/"><Image class="w-32 h-16" src={logo} alt="logo"/></Link>
-                <div class="flex flex-row flex-1 justify-around my-auto md:px-16">
+                <div class="flex flex-row flex-1 justify-around my-auto md:px-16 ">
                     <Link href="/"><button class="p-2">Home</button></Link>
                     <Link href="/products"><button class="p-2">Products</button></Link>
                     <Link href="/construction"><button class="p-2">About Us</button></Link>
-                    <Link href="/contact"><button class="bg-blue rounded-md py-2 px-12">Contact Sales</button></Link>
-                    <Link href="/login"><button class="bg-blue rounded-md py-2 px-12">Customer Login</button></Link>
+                    <Link href="/contact"><button class="p-2">Contact sales</button></Link>
+                    <Link href="/login"><button class="bg-blue rounded-md py-2 px-4">Customer Login</button></Link>
                 </div>
             </div>
             <div class="flex md:hidden flex-col md:flex-row w-full m-auto text-white bg-dark">

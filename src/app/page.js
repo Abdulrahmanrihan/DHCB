@@ -4,7 +4,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowPointer, faBorderAll, faGlobe, faLink, faMagnifyingGlass, faPen, faSitemap, faUser, faFigma, faBolt, faBagShopping, faCloud, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faArrowPointer, faBorderAll, faGlobe, faLink, faMagnifyingGlass, faPen, faSitemap, faUser, faBolt, faBagShopping, faCloud, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -233,7 +233,6 @@ export default function Home() {
           </div>
           <div class="flex flex-col bg-white p-6 rounded-sm md:flex-1 md:m-2 my-2">
             <div class="flex flex-row mb-12">
-              <FontAwesomeIcon class="w-4 h-4 mt-0.5" icon={faFigma} />
               <p class="text-sm font-bold my-auto ml-2"> Figma</p>
             </div>
             <p class="text-sm">Turn your idea into UI using our designers.</p>
