@@ -3,10 +3,12 @@ import Header from "@/components/header";
 
 export default function construction(){
     return (
-        <main>
+        <main class="relative h-screen">
             <Header/>
             <p class="p-16 md:p-32 text-3xl md:text-4xl text-center">Undergoing some changes...</p>
-            <Footer/>
+            <div class="absolute bottom-0 w-full">
+                <Footer/>
+            </div>
         </main>
     );
 }

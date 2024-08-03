@@ -14,7 +14,7 @@ export default function products(){
             <Header/>
             <section class="md:p-24 p-16 bg-darker flex md:flex-row flex-col">
                 <div class="flex flex-col md:w-1/2 w-full">
-                <h1 class="text-gray md:text-5xl text-3xl tracking-tight">EFFECIENCY</h1>
+                <h1 class="text-gray md:text-4xl text-3xl tracking-tight">EFFECIENCY</h1>
                 <h1 class="font-bold text-white md:text-5xl text-3xl">Save resources</h1>
                 <p class="text-light-gray mt-8 mb-4">Your time is precious let's optimize for it</p>
                 <a class="my-10" href="/contact"><button class="bg-blue rounded-md py-2 px-4">Contact Sales</button></a>

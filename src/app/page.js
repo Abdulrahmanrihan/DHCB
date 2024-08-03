@@ -20,6 +20,7 @@ import infinity from "../assets/images/infinity.png"
 import ecommerce from "../assets/images/ecommerce.png"
 
 import devices from "../assets/images/devices.png"
+import FooterTop from "@/components/footerTop";
 
 export default function Home() {
   return (
@@ -246,6 +247,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <FooterTop/>
       <Footer/>
     </main>
   );
