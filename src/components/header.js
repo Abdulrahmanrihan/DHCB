@@ -21,7 +21,7 @@ export default function Header(){
 
     return(
         <main>
-            <div class="hidden md:flex flex-row w-full m-auto p-4 bg-dark">
+            <div class="hidden md:flex flex-row w-full m-auto p-4 bg-dark text-white">
                 <Link href="/"><Image class="w-32 h-16" src={logo} alt="logo"/></Link>
                 <div class="flex flex-row flex-1 justify-around my-auto md:px-16 ">
                     <Link href="/"><button class="p-2">Home</button></Link>

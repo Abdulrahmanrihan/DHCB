@@ -10,22 +10,20 @@ export default function login(){
         <main class="bg-white">
             <Header/>
             <div class="w-full mx-auto text-sm">
-                <div class="flex flex-col bg-darker rounded-2xl m-6 pb-2 p-12 md:p-18 w-fit md:mx-auto ">
+                <div class="flex flex-col bg-darker rounded-2xl m-12 pb-2 p-12 md:p-18 w-fit md:mx-auto ">
                     <div class="flex flex-col w-full md:w-fit text-black mx-auto">
                         <div class="mx-auto p-12">
-                            <p class="text-3xl md:text-4xl text-gray mb-2">Welcome</p>
-                            <p class="text-3xl md:text-4xl text-white mb-8">We are glad to see you back</p>
+                            <p class="text-3xl md:text-4xl text-white mb-8">Customer Login</p>
                         </div>
-                        <input class="rounded-lg bg-white text-black p-2 my-2 w-1/2 mx-auto" type="text" placeholder="Username"/>
-                        <input class="rounded-lg bg-white text-black p-2 my-2 w-1/2 mx-auto" type="password" placeholder="Password"/>
-                        <button class="bg-blue p-2 rounded-lg my-4 w-1/2 mx-auto md:mb-16">Next</button>
-                    </div>
-                    <div class="flex flex-col w-full md:w-fit mx-auto pb-8">
-                        <Image class="my-6 md:my-auto mx-auto" src={devices} width={350} height={350}/>
+                        <input class="rounded-lg bg-white text-black p-2 my-2 w-2/3 mx-auto" type="text" placeholder="Username"/>
+                        <input class="rounded-lg bg-white text-black p-2 my-2 w-2/3 mx-auto" type="password" placeholder="Password"/>
+                        <button class="bg-blue p-2 rounded-lg my-4 w-1/3 mx-auto md:mb-16 text-white">Login</button>
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <div class="absolute bottom-0 w-full">
+                <Footer/>
+            </div>
         </main>
     );
 }
